@@ -1,0 +1,7 @@
+/workspaces/orders-api/src/main/java/com/enterprise/orders/OrdersApplication.java
+/workspaces/orders-api/src/main/java/com/enterprise/orders/config/SecurityConfig.java
+/workspaces/orders-api/src/main/java/com/enterprise/orders/controller/CustomerController.java
+/workspaces/orders-api/src/main/java/com/enterprise/orders/controller/HealthController.java
+/workspaces/orders-api/src/main/java/com/enterprise/orders/domain/Customer.java
+/workspaces/orders-api/src/main/java/com/enterprise/orders/repository/CustomerRepository.java
+/workspaces/orders-api/src/main/java/com/enterprise/orders/service/CustomerService.java

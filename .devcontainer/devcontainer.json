@@ -1,24 +1,17 @@
  {
   "name": "orders-api-dev",
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {
-    "ghcr.io/devcontainers/features/java:1": {
-      "version": "21",
-      "installMaven": "true"
-    }
-  },
+  "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+  "features": {},
   "customizations": {
     "vscode": {
       "extensions": [
         "vscjava.vscode-java-pack",
         "vmware.vscode-boot-dev-pack",
-        "vscjava.vscode-gradle",
-        "ms-azuretools.vscode-docker",
         "redhat.vscode-yaml"
       ]
     }
   },
   "forwardPorts": [8080, 5432, 5672, 15672, 6379],
-  "postCreateCommand": "java -version && mvn -v && docker --version",
-  "remoteUser": "codespace"
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y openjdk-21-jdk maven docker.io docker-compose-v2 && sudo usermod -aG docker vscode && java -version && mvn -v && docker --version",
+  "remoteUser": "vscode"
 }
